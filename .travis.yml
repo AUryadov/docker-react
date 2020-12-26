@@ -1,9 +1,9 @@
 sudo: required
-  service:
-    - docker
+ service:
+  - docker
 
 before_install:
-  - docker build -t uryadovalex/docker-react -f Dockerfile.dev .
+ - docker build -t uryadovalex/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true uryadovalex/docker-react npm test
+ - docker run -e CI=true uryadovalex/docker-react npm test
