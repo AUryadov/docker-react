@@ -1,4 +1,4 @@
-language: generic
+dist: focal
 sudo: required
 
 services:
